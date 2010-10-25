@@ -1,5 +1,4 @@
 #!/bin/bash
 
-
 who | sed -e 's/[ \t]*pts.*//' | sort | uniq | grep $1 | wc -l | sed -e 's/1/tak/' | sed -e 's/0/nie/'
 
